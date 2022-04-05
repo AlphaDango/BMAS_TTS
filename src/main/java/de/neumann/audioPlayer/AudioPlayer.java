@@ -11,7 +11,7 @@ public class AudioPlayer {
             String[] filenames = sentence.split(" ");
             for(String filename:filenames){
                 try {
-                    File soundFile = new File("L:\\Users\\dango\\IdeaProjects\\BMAS_TTS\\src\\main\\resources\\soundfiles\\"+filename+".wav");
+                    File soundFile = new File("src/main/resources/soundfiles/"+filename+".wav");
                     Clip clip = AudioSystem.getClip();
                     clip.open(AudioSystem.getAudioInputStream(soundFile));
                     clip.start();
